@@ -1,0 +1,49 @@
+{
+  "name": "t-mobile-lie-detector",
+  "version": "0.0.1",
+  "description": "Prototype for Droga5's T-Mobile Lie Detector",
+  "repository": "https://source.developers.google.com/p/t-mobile-lie-detector/r/default",
+  "private": true,
+  "scripts": {
+    "start": "node app.js",
+    "monitor": "nodemon app.js",
+    "deploy": "gcloud preview app deploy app.yaml",
+    "lint": "jshint --exclude-path=../.gitignore .",
+    "mocha": "mocha test/index.js -t 30000",
+    "test": "npm run lint && npm run mocha"
+  },
+  "author": "Google Inc.",
+  "contributors": [
+    {
+      "name": "Amit Kumar",
+      "email": "themit@gmail.com"
+    }
+  ],
+  "dependencies": {
+    "async": "^1.5.2",
+    "body-parser": "^1.15.0",
+    "cookie-session": "^2.0.0-alpha.1",
+    "express": "^4.13.4",
+    "express-winston": "^1.2.0",
+    "gcloud": "^0.28.0",
+    "googleapis": "^2.1.7",
+    "jade": "^1.11.0",
+    "kerberos": "^0.0.18",
+    "lodash": "^4.5.0",
+    "mongodb": "^2.1.7",
+    "multer": "^1.1.0",
+    "mysql": "^2.10.2",
+    "node-cloud-vision-api": "^0.2.0",
+    "prompt": "^0.2.14",
+    "request": "^2.69.0",
+    "winston": "^2.1.1"
+  },
+  "devDependencies": {
+    "jshint": "^2.9.1",
+    "mocha": "^2.4.5",
+    "supertest": "^1.1.0"
+  },
+  "engines": {
+    "node": ">=0.12.7"
+  }
+}
