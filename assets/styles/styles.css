@@ -79,6 +79,11 @@ p {
 	position: relative;
 }
 
+.page-upload h1 {
+	color: #000;
+}
+
+
 .page-upload p {
 	padding-right: 3em;
 }
@@ -168,6 +173,7 @@ h1 {
     height: auto;
     padding: 1em;
     text-decoration: underline;
+    margin-bottom: 5em;
 }
 
 .btn-upload-wrapper {
